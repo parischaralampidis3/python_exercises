@@ -1,0 +1,19 @@
+ 1. True and True	 TRUE correct
+ 2. False and True FALSE correct 	
+ 3. 1 == 1 and 2 == 1 FALSE correct
+ 4. "test" == "test" TRUE	correct
+ 5. 1 == 1 or 2 != 1 FALSE wrong
+ 6. True and 1 == 1 TRUE correct
+ 7. False and 0 != 0 FALSE correct
+ 8. True or 1 == 1 TRUE correct
+ 9. "test" == "testing" FALSE correct
+ 10. 1 != 0 and 2 == 1	FALSE correct
+ 11. "test" != "testing" TRUE	correct
+ 12. "test" == 1 FALSE correct
+ 13. not (True and False) TRUE correct
+ 14. not (1 == 1 and 0 != 1) FALSE correct
+ 15. not (10 == 1 or 1000 == 1000) FALSE correct
+ 16. not (1 != 10 or 3 == 4) FALSE correct
+ 17. not ("testing" == "testing" and "Zed" == "Cool Guy") TRUE correct
+ 18. 1 == 1 and not ("testing" == 1 or 1 == 0) TRUE CORRECT
+ 19. "chunky" == "bacon" and not (3 == 4 or 3 == 3) FALSE CORRECT
