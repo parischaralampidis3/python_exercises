@@ -8,11 +8,54 @@ In Python, text in between quotes -- either single or double quotes -- is a stri
  are all integers, while 5.3, 3.14159 and 6.0 are all floats. When attempting to mix incompatible data types, you may encounter a TypeError.
  You can always check the data type of something using the type() function.
 
+-int 
+-----
+Integers are the whole number, including negative numbers but not franctions. In Python, there is no limit to how long an integer value can be.
+They can be created directly by entering a number with a decimal point, or by using operations such as division on integers. Extra zeros present at the number's end are ignored automatically.
+
+-float
+------
+This is a real number with floating-point represantation. It is specified by a decimal point. 
 
 
+-complex 
+number
+------
+Numnber data types store numeric values.They are immutable data types, which means that changing the value of a number data type results in a newly allocated project
+
+
++ plus
+- minus
+/ slash
+* asterisk
+% percent
+< less- than
+> greater- than
+<= less- than- equal
+>= greater- than- equa
+
+
+Why is the % character a “modulus” and not a “percent”?
+--------------------------------------
+Mostly that’s just how the designers chose to use that symbol. In normal writing, you are correct 
+to read it as a “percent.” In programming, this calculation is typically done with simple division 
+and the / operator. The % modulus is a different operation that just happens to use the % symbol.
+
+How does % work?
+-----------------
+Another way to say it is “X divided by Y with J remaining.” For example, “100 divided by 16 with 
+4 remaining.” The result of % is the J part, or the remaining part.
+What is the order of operations?
+In the United States we use an acronym called PEMDAS, which stands for Parentheses Exponents 
+Multiplication Division Addition Subtraction. That’s the order Python follows as well.
+
+Why does / (divide) round down?
+--------------------------------
+It’s not really rounding down; it’s just dropping the fractional part after the decimal. Try doing 
+7.0 / 4.0 and compare it to 7 / 4 and you’ll see the difference
 
 Python %d and %s For Formatting Integer and String
---------------------------------------------------
+------------------------------------------
 
 Python is developed with the C programming language and some of the language syntaxes 
 are borrowed from the C. The % is an operator used to format a given string in different 

@@ -1,3 +1,27 @@
+Comments
+--------
+Comments in Python are the lines in the code that are ignored by the interpreter
+during the execution of the program. Comments enhance the readability of the code and help the programmers to understand the code very carefully. 
+
+-Single line comments
+-Multiline comments
+-Docstring comments
+
+# Python program to demonstrate comments
+ 
+# sample comment
+#name = "geeksforgeeks"
+#print(name)
+
+Comments are generally used for the following purposes:
+
+-Code readability
+-Explanation of the code or metadata of the project
+-Prevent execution of code
+-To include resources
+
+
+
 Truth terms
 -----------
 n Python we have the following terms (characters and phrases) for determining if something is 
