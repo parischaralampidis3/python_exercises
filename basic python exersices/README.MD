@@ -1,5 +1,8 @@
 data types
 ----------
+number
+------
+Numnber data types store numeric values.They are immutable data types, which means that changing the value of a number data type results in a newly allocated project
 
 intenger 
 --------
@@ -7,10 +10,7 @@ In Python, text in between quotes -- either single or double quotes -- is a stri
  An integer is a whole number, without a fraction, while a float is a real number that can contain a fractional part. For example, 1, 7, 342
  are all integers, while 5.3, 3.14159 and 6.0 are all floats. When attempting to mix incompatible data types, you may encounter a TypeError.
  You can always check the data type of something using the type() function.
-
--int 
------
-Integers are the whole number, including negative numbers but not franctions. In Python, there is no limit to how long an integer value can be.
+  Integers are the whole number, including negative numbers but not franctions. In Python, there is no limit to how long an integer value can be.
 They can be created directly by entering a number with a decimal point, or by using operations such as division on integers. Extra zeros present at the number's end are ignored automatically.
 
 -float
@@ -18,11 +18,7 @@ They can be created directly by entering a number with a decimal point, or by us
 This is a real number with floating-point represantation. It is specified by a decimal point. 
 
 
--complex 
-number
-------
-Numnber data types store numeric values.They are immutable data types, which means that changing the value of a number data type results in a newly allocated project
-
+-complex
 
 + plus
 - minus
@@ -33,6 +29,45 @@ Numnber data types store numeric values.They are immutable data types, which mea
 > greater- than
 <= less- than- equal
 >= greater- than- equa
+
+Type conversion between numbers
+-------------------------------
+We can convert one number into the other
+form by two methods:
+
+-Using Arithmetic operations
+----------------------------
+We can use operations like addition, substract, division and multiply, in order to change the type of the number
+implicity, if one of the operands is float.This method is not working for complex numbers. 
+
+a = 1.6
+b = 5 
+
+c = a + b 
+
+print(c)
+
+Using built-in functions ------------------------ 
+
+  We can also use built in functions 
+  like int(), float() and complex( )
+  to convert into different types explicitly.
+
+When we convert float to int, the decimal part is truncated. 
+
+Note: 
+
+We can’t convert a complex data type number into int data type and float data type numbers.
+We can’t apply complex built-in functions on strings.
+
+Random numbers in Python
+------------------------
+Python provides a random module to generate pseudo - random numbers. This 
+module can create random numbers, select a random element from a sequence in Python. 
+
+Math module
+------------
+The math module of Python helps to carry different mathematical operations trigonometry, statistics, probability, logarithms, etc. 
 
 
 Why is the % character a “modulus” and not a “percent”?
