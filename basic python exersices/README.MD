@@ -1,4 +1,4 @@
-data types
+DATA TYPES
 ----------
 number
 ------
@@ -67,7 +67,111 @@ module can create random numbers, select a random element from a sequence in Pyt
 
 Math module
 ------------
-The math module of Python helps to carry different mathematical operations trigonometry, statistics, probability, logarithms, etc. 
+The math module of Python helps to carry different mathematical operations trigonometry, statistics, probability, logarithms, etc.
+
+VARIABLES
+----------------
+Python variables is containers which store values. Python is not 'statically typed'. We do not need to declare variables before using them, or declare their type. A variable is created the moment we first assign a value to it. 
+A python variable is a name giver to a memory location. It is the basic unit of storage in a program.
+
+Rules for creating variables in Python
+---------------------------------------
+- A variable name must start with a letter or the underscore character.
+- A variable cannot start with a number.
+- A variable name can only contain alpha-numeric characters and underscores(A-z, 0-9, and _).
+- Variable names are case-sensitive(name, Name and NAME are three different variables).
+- The reserved words(keywords) cannot be used naming the variable
+
+Declare the Variable
+Let’s see how to declare the variable and print the variable.
+
+Number = 100
+ 
+# display
+print( Number)
+
+Re-declare the Variable
+We can re-declare the python variable once we have declared the variable already.
+
+Python3
+# declaring the var
+Number = 100
+ 
+# display
+print("Before declare: ", Number)
+ 
+# re-declare the var
+Number = 120.3
+   
+print("After re-declare:", Number)
+
+
+Asign a single value to multiple 
+--------------------------------
+variables.
+----------
+
+Also Python allows asigning a single value to serveral variables simultaneouusly with "=" operators.
+
+a = b = c = 10
+ 
+print(a)
+print(b)
+print(c)
+
+Asigning different values to multiple
+------------------------------------- variables
+---------
+
+Python allows adding different values in a single line with "," operators. 
+
+a, b, c = 1, 20.2, "GeeksforGeeks"
+ 
+print(a)
+print(b)
+print(c)
+
+Global keyword
+---------------
+Global keyword is a keyword that allows a user to modify a variable outside of the 
+current scope.
+It is used to create global variables from a non-global scope inside a function. Global 
+keyword is used inside a function only when we want to do asignments or when we want to change a variable.
+
+Rules of global keyword:
+
+-If a variable is assigned a value anywhere within the function’s body, it’s assumed to be a local unless explicitly declared as global.
+
+-Variables that are only referenced inside a function are implicitly global.
+
+-We Use global keyword to use a global variable inside a function.
+
+-There is no need to use global keyword outside a function.
+
+# Python program to modify a global
+# value inside a function
+ 
+x = 15
+def change():
+ 
+    # using a global keyword
+    global x
+ 
+    # increment value of a by 5
+    x = x + 5
+    print("Value of x inside a function :", x)
+ 
+ 
+change()
+print("Value of x outside a function :", x)
+
+
+
+
+
+
+Variables and Scope
+-------------------
 
 
 Why is the % character a “modulus” and not a “percent”?
