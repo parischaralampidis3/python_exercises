@@ -16,3 +16,29 @@ Some points on Python class:
 
 - Attibutes are always public and can be accessed using the dot(.) operator.
 
+Class Objects
+--------------
+
+An Object is an instance of  a class. A class is like a blueprint, while an instance is a copy of the class with actual values. 
+
+An object consists of 
+
+State: It is represented by the attributes of an object. It also reflects the properties of an object.
+
+Behaviour: It is represented by the methods of an object.It also reflects the response of an object to other objects.
+
+Identity: It gives  a unique name to an object and enables one object to interact with other object.
+
+Declaring objects
+-----------------
+
+When an object of a class is created, the class is said to be instantiated. All the instances share the attributes an the behavioue of the class. But the 
+values of those attributes the state are unique fore each object. A single class may have any number of instances.
+
+The self 
+--------
+
+-Class methods must have an extra first parameter in the method definition.We do not give a value for this parameter when we call the method, Python provides it.
+
+-if we have a method that takes no arguments, we still have one  argument.
+

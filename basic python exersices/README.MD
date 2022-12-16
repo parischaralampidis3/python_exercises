@@ -188,6 +188,8 @@ What is the order of operations?
 In the United States we use an acronym called PEMDAS, which stands for Parentheses Exponents 
 Multiplication Division Addition Subtraction. That’s the order Python follows as well.
 
+
+
 Why does / (divide) round down?
 --------------------------------
 It’s not really rounding down; it’s just dropping the fractional part after the decimal. Try doing 
@@ -247,7 +249,28 @@ print("My name is %s and I am %d years old." % (name,age))
 My name is Ahmet and I am 8 years old.
 
 
+What if I wanted to start the months on 
+---------------------------------------
+a new line?
+------------
 
+You simply start the string with \n like this:
+ "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+
+Why do the \n newlines not work when I 
+--------------------------------------
+use %r?
+-------
+
+That’s how %r formatting works; it prints it the way you wrote it (or close to it). It’s the “raw” 
+format for debugging.
+
+Why do I get an error when I put spaces 
+---------------------------------------
+between the three double- quotes?
+---------------------------------
+
+You have to type them like """ and not " " ", meaning with no spaces between each one.
 
 
 
