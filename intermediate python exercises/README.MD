@@ -42,3 +42,24 @@ The self
 
 -if we have a method that takes no arguments, we still have one  argument.
 
+self represents the instance of the class. By using the “self”  we can access the attributes and methods of the class in python. It binds the attributes with the given arguments.
+
+
+
+__init__method
+--------------
+
+The __init__method is similar to the constructors in C++ and Java. 
+Constructors are used to initialize the object's state. 
+Like methods, a constructor also contains a collection of statements that are executed at the time of object creation.
+It runs as soon as an object of a class is instantiated. The method is useful to do any instatiation you want to do with your project. 
+
+ Constructors are used to initializing the object’s state. The task of constructors is to initialize(assign values) to the data members of the class when an object of the class is created. Like methods, a constructor also contains a collection of statements(i.e. instructions) that are executed at the time of Object creation. It is run as soon as an object of a class is instantiated. The method is useful to do any initialization you want to do with your object.
+
+Class and intstance variables
+------------------------------
+
+Instance variables are for data, unique to each instance and class variables are for attributes and methods shared by all instances of the class.Instance variables are variables whose value is assigned a constuctor or method with self whereas class variables are variables whose value is assigned in the class.
+
+Inheritance in Python
+---------------------
