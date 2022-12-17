@@ -63,3 +63,48 @@ Instance variables are for data, unique to each instance and class variables are
 
 Inheritance in Python
 ---------------------
+One of the core concepts in the object-oriented programming (OOP) languages  is inheritance.
+It is a mechanism that allows you to create hierarcy of classes that share a set of properties and methods by deriving a class from another class.
+Inheritance is the capability of one class to devire or inherit the properties from another class.
+
+Benefits of inheritance are:
+---------------------------
+
+- It represents real-world relationships well
+
+- It provides the reusability of a code. We don't have to write the same code again and again. Also it allows us to add more features to a class without modifying it.
+
+- It is transitive in a nature, which means tha if class B inherits from another class A, then all the subclasses of B would automatically inherit from class A.
+
+-Inheritance offers a simple, understandable model structure
+
+-Less development and maintenance expenses result from an inheritance.
+
+Subclassing (Calling constructor of 
+-----------------------------------
+parent class)
+---------------------
+
+A child class needs to indetify which class is its parent class.
+This can be done by mentioning the parent class name in the definition of the child class.
+
+Different types of Inheritance:
+
+Single inheritance: When a child class inherits from only one parent class, it is called single inheritance. We saw an example above.
+
+
+Multiple inheritances: When a child class inherits from multiple parent classes, it is called multiple inheritances. 
+
+Hierarchical inheritance More than one derived class are created from a single base.
+
+
+Hybrid inheritance: This form combines more than one form of inheritance. Basically, it is a blend of more than one type of inheritance.
+
+
+Comnposition
+-------------
+
+
+
+Polyphormism
+------------
