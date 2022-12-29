@@ -165,14 +165,8 @@ def change():
 change()
 print("Value of x outside a function :", x)
 
-
-
-
-
-
 Variables and Scope
 -------------------
-
 
 Why is the % character a “modulus” and not a “percent”?
 --------------------------------------
@@ -269,10 +263,7 @@ Why do I get an error when I put spaces
 ---------------------------------------
 between the three double- quotes?
 ---------------------------------
-
 You have to type them like """ and not " " ", meaning with no spaces between each one.
-
-
 
 from os.path import exists
 ----------------------------
@@ -280,7 +271,6 @@ OS module in Python provides functions for interacting with the operating system
 OS comes under Python’s standard utility modules. This module provides a portable way 
 of using operating system dependent functionality. os.path module is sub module of OS 
 module in python used for common path name manipulation.
-
 
 
 python methods
@@ -308,13 +298,10 @@ First, the seek() function is dealing in bytes, not lines. So that’s going to 
 the fi le. Second, current_line is just a variable and has no real connection to the fi le at all. We 
 are manually incrementing it
 
-
-
 open()
 --------
 Before you can read or write a file, you have to open it using Python's built-in open() function. 
 This function creates a file object, which would be utilized to call other support methods associated with it.
-
 
 close()
 --------
@@ -326,10 +313,7 @@ which requires that the file be opened will raise a ValueError after the file ha
 Python automatically closes a file when the reference object of a file is reassigned 
 to another file. It is a good practice to use the close() method to close a file.
 
-
 fileObject.close()
-
-
 
 #!/usr/bin/python
 
@@ -347,8 +331,6 @@ It is important to note that Python strings can have binary data. apart from tex
 
 fileObject.read([count])
 
-
-
 #!/usr/bin/python
 
 # Open a file
@@ -357,9 +339,6 @@ str = fo.read(10);
 print "Read String is : ", str
 # Close opend file
 fo.close()
-
-
-
 
 readline()
 ----------
@@ -378,11 +357,8 @@ reading the fi le to return what it found so far. The fi le f is responsible for
 position in the fi le after each readline() call, so that it will keep reading each line
 
 
-
-
 write()
 --------
-
 The write() method writes any string to an open file. 
 
 It is important to note that Python strings can have binary data and not just text.
@@ -390,9 +366,6 @@ It is important to note that Python strings can have binary data and not just te
 The write() method does not add a newline character ('\n') to the end of the string 
 
 fileObject.write(string)
-
-
-
 
 
 #!/usr/bin/python
@@ -405,11 +378,8 @@ fo.write( "Python is a great language.\nYeah its great!!\n")
 fo.close()
 
 
-
-
 truncate()
------------
-
+----------
 Python file method truncate() truncates the file's size. 
 
 If the optional size argument is present, the file is truncated to (at most) that size.
@@ -463,7 +433,7 @@ fo.close()
 
 
 Mathematical operations
--------------------------                                                                                                                                                                                       a + b = Adds a and b
+-------------------------                                                                                                                                                           a + b = Adds a and b
 
 a - b = Subtracts b from a
 
@@ -528,9 +498,6 @@ elif (n%2 == 1) or (n%2 == 0 and n in range(6, 21)): #Conditions A and C
 
 Loops
 -------
-
-
-
 Loops are control structures that iterate over a range to perform a certain task. They can work with any iterable type, such as lists and dictionaries. To control the loop in this problem, use the range function (see below for a description).
 
 There are two kinds of loops in Python.
@@ -563,9 +530,6 @@ Finally, you can add an increment value as the third argument. For example, rang
 If you are going to provide a step value, you must also include a start value.
 
 
-
-
-
 Textwrap
 The textwrap module provides two convenient functions: wrap() and fill().
 
@@ -596,7 +560,6 @@ string.
 
 Escape Sequences
 -----------------
-
 This is the list of all the escape sequences Python supports. You may not use many of these, but 
 memorize their format and what they do anyway. Also try them out in some strings to see if you 
 can make them work.
@@ -636,10 +599,46 @@ Escape What it does.
 
 Functions
 ----------
+
 Functions do three things:
  1. They name pieces of code the way variables name strings and numbers.
  2. They take arguments the way your scripts take argv.
  3. Using #1 and #2, they let you make your own “mini- scripts” or “tiny commands.”
+
+Functions can be classified into the following three types:
+
+- Built in functions : These are functions that already predefined in python like print(), min() etc.
+
+-User-defined functions: These are functions that programmers create and use at the places where they need them.
+
+-Anonymous functions: These are the functions that do not have a name and are defined by the user.These are also called lambda functions.
+
+Empty functions
+----------------
+Empty functions are not allowed in Python. We cannot defined a fuctions without writing at leaset one line of code.We get error by running an empty function. A solution for this is to use the 'pass' statement.This can be considered as a function that does nothing.
+
+
+def empty_func():
+    pass
+
+Python function arguments
+-------------------------
+Arguments are the values passed to a function when we call it. 
+Arguments are the input supplied to the function while using it.Whereas parameters are the names used inside the function while defining it.
+
+But we cannot pass those values as arguments on which the function cannot do the required operations. For example, we cannot add a string and a number. Because of this, we get an error on passing the wrong values as shown below.
+
+Traceback (most recent call last):
+File “<pyshell#59>”, line 1, in <module>
+add(‘tres’,54)
+File “<pyshell#52>”, line 2, in add
+sum=num1+num2
+TypeError: can only concatenate str (not “int”) to str
+
+Types of python arguments
+
+-required arguments
+-------------------
 
 
 Functions may have been a mind- blowing amount of information, but do not worry. Just keep 
@@ -660,9 +659,6 @@ print "OR, we can use variables from our script:"
  amount_of_crackers = 50
 
  cheese_and_crackers(amount_of_cheese, amount_of_crackers)
-
-
-
 
 
 

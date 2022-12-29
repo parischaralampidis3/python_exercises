@@ -19,7 +19,7 @@ def guess_number():
             print("You are out of tries")
             print ("Game over!")
             break;
-        elif question != result :   
+        elif question != result:
             print("Try again.." .format(question))
         elif question == result:
             print( "You guessed the correct number ".format(question))
