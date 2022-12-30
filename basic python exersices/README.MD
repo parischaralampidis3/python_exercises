@@ -637,8 +637,64 @@ TypeError: can only concatenate str (not “int”) to str
 
 Types of python arguments
 
--required arguments
+required arguments
 -------------------
+Required arguments are the arguments passed to a function in a certain order. When we call the function we need to pass the same number of arguments mentioned in the function definition.
+
+def greatest(n1,n2,n3):
+    if(n1>n2 and n1>n3):
+        print(n1," is the greatest of the three numbers")
+    elif(n2>n1 and n2>n3):
+        print(n2," is the greatest of the three numbers")
+    else:
+        print(n3," is the greatest of the three numbers")
+greatest(5,2,9)
+greatest(1,6)
+greatest(2,9,5)
+
+keyword arguments
+-----------------
+When we are concerned about the order of the values passed, we can use the keyword arguments to the function.In this case, when we call a function, by equating values to the respective parameter name used while defining a function. Here even if we switch the variables, but it will not be a problem as we use the names.
+
+def give_section(std,section):
+    print("The section of the student ",std,"is ",section)
+give_section(std='Ram',section='A')
+give_section(section='A',std='Ram')
+
+default arguments
+-----------------
+Default arguments solve the problem of the number of arguments passed to the function.We can give a default value to the parameter while defining the function. It is compulsory that all the parameters in the function should be assigned a default value.We are allowed to give the default values to only some of the parameters.
+If we do not pass the arguments for that parameter, it uses the default value assigned during the definition.Or else the given argument will be used.
+
+def avg_mark(sub1,sub2,sub3,sub4=0,sub5=0):
+    avg=(sub1+sub2+sub3+sub4+sub5)/5
+    print("The average of the marks in the 5 subjects is ",avg)
+avg_mark(63,78,96,84,87)
+avg_mark(45,34,65,53)
+
+variable numbers of arguments
+-----------------------------
+When we don't know the number of arguments to be passed to the function we can choose the option of variable arguments.
+These parameters and arguments are of variable length and the parameters are not named separately in the function.
+All these are named under the same name which is preceded by an asterisk(*) in the function header.
+
+example1
+
+def values_of_list(*varList):
+    for i in varList:
+        print(i)
+    
+values_of_list(3,4)
+values_of_list('a',6,9.0,'y')
+
+example2
+
+def langs(name,*listLangs):
+    print("The languages ", name," can speak are:")
+    for lan in listLangs:
+        print(lan)
+langs('abc','English')
+langs('xyz','English','Italian','French')
 
 
 Functions may have been a mind- blowing amount of information, but do not worry. Just keep 
@@ -659,6 +715,54 @@ print "OR, we can use variables from our script:"
  amount_of_crackers = 50
 
  cheese_and_crackers(amount_of_cheese, amount_of_crackers)
+
+Scope of the variable in Python
+-------------------------------
+The scope of a variable is the region of the program where the variable is accessible. A variable cannot be accessed from everywhere in the program. Its scope depends on the region where it is created. And the time for which the variable exists is called its lifetime.
+
+Python Local Scope
+------------------
+This is the scope of the variable created inside a function.This variable can be accessed only inside that function as it exists only when the function is executing.If we try to use it outside of the function, we can get an error.
+
+def func():
+    var=10
+    print("Inside the function, the value of var is ",var)
+func()
+print("Outside the function, the value of var is:",var)
+
+Python Global Scope
+-------------------
+These are variables that can be accessed from any part of the program.
+These exist throughout the execution of the code. 
+
+num=4
+def func():
+    global num
+    num=9
+    print("Inside the function, the value of num is:",num)
+print("Before executing the function")
+print("num=",num)
+func()
+print("After executing the function")
+print("num=",num)
+
+Deleting the functions in Python
+--------------------------------
+
+We can use the 'del' keyword followed by the function name to delete a function in Python. We cannot call the function after deleting it.
+
+def fun():
+    print("Hello!")
+fun()
+del fun
+print("After deleting the function")
+fun()
+
+Lambda Functions
+----------------
+filter(), map(), reduce()
+--------------------------
+
 
 
 
